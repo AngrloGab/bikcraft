@@ -1,93 +1,27 @@
-body {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+@import './global/global.css';
+@import './utilidades/tipografia.css';
+@import './utilidades/cores.css';
 
-ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
+@import './global/header.css';
+@import './global/footer.css';
 
-a {
-  text-decoration: none;
-}
+/*utilidades*/
+@import './utilidades/componentes.css';
 
-.header-bg {
-  background-color: #000;
-}
+/*HOME*/
+@import './home/introducao.css';
+@import './home/tecnologia.css';
+@import './home/parceiros.css';
+@import './home/depoimento.css';
 
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 20px;
-  max-width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/*Bicicletas*/
+@import './bicicletas/bicicletas-lista.css';
+@import './bicicletas/bicicletas.css';
 
-.header-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-}
+/*Seguros*/
+@import './seguros/seguros.css';
+@import './seguros/vantagens.css';
+@import './seguros/perguntas.css';
 
-.header-menu a {
-  color: #fff;
-  padding: 16px 0px;
-  display: inline-block;
-  font-size: 18px;
-  position: relative;
-}
-
-.header-menu a:after {
-  content: '';
-  display: block;
-  height: 2px;
-  /*largura do elemento pai*/
-  width: 0px;
-  background: #fff;
-  margin-top: 4px;
-  transition: 0.3s;
-  /*cuidado que agora o elemento pai dele é o body, coloque a como relative*/
-  position: absolute;
-}
-
-.header-menu a:hover:after {
-  /*largura do elemento pai*/
-  width: 100%;
-}
-
-@media (max-width: 800px) {
-  .header-menu {
-    gap: 20px;
-  }
-
-  .header-menu a {
-    background: #111111;
-    padding: 12px 16px;
-    border-radius: 5px;
-  }
-
-  .header-menu a:after {
-    display: none;
-  }
-
-  .header-menu a:hover {
-    background: #2e2e2e;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 12px;
-  }
-
-  .header-menu a {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-}
+/*termos*/
+@import './termos/termos.css';
